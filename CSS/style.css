@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 434px;
+    border: 2px solid black;
+    margin: auto;
+    position:relative;
+}
+
+#cenario1 {
+    position: absolute;
+    bottom: 0;
+    
+}
