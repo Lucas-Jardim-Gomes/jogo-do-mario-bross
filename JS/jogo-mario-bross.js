@@ -14,7 +14,7 @@
         }
 
         window.addEventListener("load",iniciar); */
-        var canva = document.querySelector("canvas");
+        var canva = document.querySelector ("canvas");
         var contexto = canva.getContext("2d");
         var cenario = new Image();
         function IniciarJogo(){

@@ -4,9 +4,28 @@
     box-sizing: border-box;
 }
 
-#janela-do-jogo {
-    width: 600px;
-    height: 400px;
+.mundo-do-jogo {
+    width: 80%;
+    height: 435px;
     border: 2px solid black;
     margin: auto;
+    top: 100px;
+    position: relative;
+
 }
+
+.cenario {
+    position: absolute;
+    bottom: 0;
+    animation: cenario1-animacao 5s;
+    background: fixed;
+}
+
+.mario{
+    width: 20px;
+    position: absolute;
+    bottom: 48px;
+}
+
+
+
