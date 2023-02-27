@@ -1,4 +1,17 @@
-alert("teste")
+var altura = 0
+var largura = 0
+function ajustaTamanhoPalcoJogo(){
+    var altura = window.innerHeight
+    var largura = window.innerWidth
+
+    console.log(altura, largura)
+}
+
+ajustaTamanhoPalcoJogo()
+
+
+/*
+
 const WIDTH = 600;
 const HEIGHT = 400;
 
@@ -31,3 +44,5 @@ if(player.x < cam.innerRightBoundary()){
 // na função de rederização você adiciona isso depois de ctx.save();
 ctx.save();
 ctx.translate(-cam.x,-cam.y);
+
+*/
