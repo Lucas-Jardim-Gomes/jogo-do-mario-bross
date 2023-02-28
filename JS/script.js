@@ -3,8 +3,9 @@ window.onload = function(){
     var cnv = document.querySelector("canvas");
     var ctx = cnv.getContext("2d");
     var spriteSheet = new Image();
-    spriteSheet.src = "imagens/img.png";
+    spriteSheet.src = "./imagens/mario.png";
     var Mario = new Sprite(spriteSheet);
+
 
     window.addEventListener("keydown", keydownHandler, false);
     window.addEventListener("keyup", keyupHandler, false);
