@@ -57,7 +57,7 @@ window.onload = function(){
 
     }
  }
-    SpriteSheet.onload = function(){
+    spriteSheet.onload = function(){
         inicializacao();
     }
 
