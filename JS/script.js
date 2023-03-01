@@ -2,12 +2,37 @@ window.onload = function(){
     var LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
     var cnv = document.querySelector("canvas");
     var ctx = cnv.getContext("2d");
+    spriteSheet = "img/mario.png"
     var MARIO = new Sprite(spriteSheet);
-    //var MARIO = new Sprite(spriteSheet);
+
+
+        spriteSheet.onload = function(){
+            inicia();
+        }
+
+        function inicia(){
+            loop();
+        }
+
+        function update(){
+
+        }
+
+        function draw(){
+            MARIO.draw(ctx);
+        }
+
+        function loop(){
+            window.requestAnimationFrame(loop,cnv);
+            update();
+            draw();
+        }
     
 }
 // Movimentação da camera junto com personagem 
 
+
+/*
 const WIDTH = 600;
 const HEIGHT = 400;
 
@@ -40,3 +65,5 @@ if(player.x < cam.innerRightBoundary()){
 // na função de rederização você adiciona isso depois de ctx.save();
 ctx.save();
 ctx.translate(-cam.x,-cam.y);
+
+*/
