@@ -4,7 +4,7 @@ window.onload = function(){
     var ctx = cnv.getContext("2d");
     var spriteSheet = new Image();
     spriteSheet.src = "./imagens/mario.png";
-    var Mario = new Sprite(spriteSheet);
+    var mario = new Sprite(spriteSheet);
 
 
     window.addEventListener("keydown", keydownHandler, false);
@@ -13,28 +13,28 @@ window.onload = function(){
     function keydownHandler(e){
         switch(e.keyCode){
             case RIGHT:
-                Mario.mvRight = true;
-                Mario.mvLeft = false;
-                Mario.mvUp = false;
-                Mario.mvDown = false;
+                mario.mvRight = true;
+                mario.mvLeft = false;
+                mario.mvUp = false;
+                mario.mvDown = false;
                 break;
             case LEFT:
-                Mario.mvRight = false;
-                Mario.mvLeft = true;
-                Mario.mvUp = false;
-                Mario.mvDown = false;
+                mario.mvRight = false;
+                mario.mvLeft = true;
+                mario.mvUp = false;
+                mario.mvDown = false;
                 break;
             case UP:
-                Mario.mvRight = false;
-                Mario.mvLeft = false;
-                Mario.mvUp = true;
-                Mario.mvDown = false;
+                mario.mvRight = false;
+                mario.mvLeft = false;
+                mario.mvUp = true;
+                mario.mvDown = false;
                 break;
             case DOWN:
-                Mario.mvRight = false;
-                Mario.mvLeft = false;
-                Mario.mvUp = false;
-                Mario.mvDown = true;
+                mario.mvRight = false;
+                mario.mvLeft = false;
+                mario.mvUp = false;
+                mario.mvDown = true;
                 break;
             
         }
@@ -43,21 +43,21 @@ window.onload = function(){
  function keyupHandler(e){
     switch(e.keyCode){
         case RIGHT:
-            Mario.mvRight = false
+            mario.mvRight = false
         break;
         case LEFT:
-            Mario.mvLeft = false
+            mario.mvLeft = false
             break;
         case UP:
-            Mario.mvUp = false
+            mario.mvUp = false
         break;
         case DOWN:
-            Mario.mvDown = false
+            mario.mvDown = false
         break;
 
     }
  }
-    spriteSheet.onload = function(){
+    SpriteSheet.onload = function(){
         inicializacao();
     }
 
@@ -68,7 +68,7 @@ window.onload = function(){
 
     }
     function draw(){
-        Mario.draw(ctx);
+        mario.draw(ctx);
     }
 
     function loop(){
