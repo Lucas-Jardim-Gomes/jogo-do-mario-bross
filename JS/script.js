@@ -1,4 +1,11 @@
-
+window.onload = function(){
+    var LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
+    var cnv = document.querySelector("canvas");
+    var ctx = cnv.getContext("2d");
+    var MARIO = new Sprite(spriteSheet);
+    //var MARIO = new Sprite(spriteSheet);
+    
+}
 // Movimentação da camera junto com personagem 
 
 const WIDTH = 600;
